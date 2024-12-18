@@ -5,4 +5,5 @@ type RootResponse struct {
 	Ok      bool   `json:"ok"`
 	Uptime  string `json:"uptime"`
 	Version string `json:"version"`
+	Bot     string `json:"bot"`
 }

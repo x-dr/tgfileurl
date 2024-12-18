@@ -69,6 +69,7 @@ func getRouter(log *zap.Logger) *gin.Engine {
 			Ok:      true,
 			Uptime:  utils.TimeFormat(uint64(time.Since(startTime).Seconds())),
 			Version: versionString,
+			Bot:     "https://t.me/TG_FileurlBot",
 		})
 	})
 	routes.Load(log, router)
